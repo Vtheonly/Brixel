@@ -2,13 +2,12 @@
 
 import React from 'react';
 
-const BlogSlugPage = () => {
+const BlogPostPage = ({ params }: { params: { slug: string } }) => {
   return (
     <div>
-      <h1>Blog Post</h1>
-      <p>This is a placeholder for a blog post.</p>
+      <h1>Blog Post: {params.slug}</h1>
     </div>
   );
 };
 
-export default BlogSlugPage;
+export default BlogPostPage;

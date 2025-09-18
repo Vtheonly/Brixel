@@ -2,13 +2,12 @@
 
 import React from 'react';
 
-const CaseStudySlugPage = () => {
+const CaseStudyPage = ({ params }: { params: { slug: string } }) => {
   return (
     <div>
-      <h1>Case Study Post</h1>
-      <p>This is a placeholder for a case study post.</p>
+      <h1>Case Study: {params.slug}</h1>
     </div>
   );
 };
 
-export default CaseStudySlugPage;
+export default CaseStudyPage;

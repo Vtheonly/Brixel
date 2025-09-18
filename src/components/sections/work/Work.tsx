@@ -19,7 +19,7 @@ const Work = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projectData.map((project, index) => (
             <Link href={`/work/${project.id}`} key={project.id} className="group block">
-              <div classNameName="relative overflow-hidden rounded-lg shadow-lg">
+              <div className="relative overflow-hidden rounded-lg shadow-lg">
                 <Image
                   src={project.imageUrl || placeholderImages[index % placeholderImages.length]}
                   alt={project.title}
