@@ -21,3 +21,9 @@ export interface Project {
   partnerType: string;
   imageUrl: string;
 }
+
+export interface TeamMember {
+  name: string;
+  role: string;
+  imageUrl: string;
+}
