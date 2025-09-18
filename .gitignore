@@ -1,0 +1,10 @@
+node_modules
+Brixel
+.vscode
+.next
+.DS_Store
+Thumbs.db
+*.log
+.nyc_output
+coverage
+.cache

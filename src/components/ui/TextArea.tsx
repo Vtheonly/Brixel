@@ -1,0 +1,3 @@
+// src/components/ui/TextArea.tsx
+// Similar structure to Input.tsx, but using <textarea>
+// ...
