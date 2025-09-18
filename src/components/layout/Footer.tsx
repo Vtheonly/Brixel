@@ -1,6 +1,6 @@
 // src/components/layout/Footer.tsx
 import { FOOTER_LINKS } from "@/lib/constants";
-import { Mail, Phone } from "lucide-react";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -27,11 +27,11 @@ const Footer = ({ className }: { className?: string }) => {
             <h3 className="font-bold mb-4 text-gray-400">Phone:</h3>
             {FOOTER_LINKS.contact.phones.map((phone) => (
               <p key={phone} className="flex items-center gap-2 mb-2">
-                <Phone size={16} /> {phone}
+                📞 {phone}
               </p>
             ))}
             <a href={`mailto:${FOOTER_LINKS.contact.email}`} className="flex items-center gap-2 mt-4 hover:text-brand-primary transition-colors">
-              <Mail size={16} /> {FOOTER_LINKS.contact.email}
+              ✉️ {FOOTER_LINKS.contact.email}
             </a>
           </div>
 
