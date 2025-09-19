@@ -16,7 +16,7 @@ const ContactPage = () => {
            <h1 className="text-5xl md:text-6xl font-bold mt-8 leading-tight">
              Wanna <span className="highlight-pink">build</span> a brand !
            </h1>
-           <p className="text-5xl md:text-6xl font-bold text-brand-secondary mt-2">Let's talk</p>
+           <p className="text-5xl md:text-6xl font-bold text-brand-secondary mt-2">Let&apos;s talk</p>
         </div>
 
         {/* Right Side: Form */}

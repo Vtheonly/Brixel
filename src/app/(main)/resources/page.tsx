@@ -20,7 +20,7 @@ const ResourcesPage = () => {
             Wanna <span className="highlight-pink">build</span> a brand !
           </h1>
           <p className="text-5xl md:text-6xl font-bold text-brand-secondary mt-2">
-            Let's talk
+            Let&apos;s talk
           </p>
         </div>
 

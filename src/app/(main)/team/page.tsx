@@ -10,7 +10,7 @@ export default function TeamPage() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Our Team</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We're a crew of curious minds who dare to break patterns and make bold moves—always with strategy at the core. Different stories, one mission: building brands that actually matter. We challenge each other, and we can do the same for you. We believe that when you love what you do, every project is more than work, it's a chance to create something unforgettable. <strong>TOGETHER.</strong>
+            We&apos;re a crew of curious minds who dare to break patterns and make bold moves—always with strategy at the core. Different stories, one mission: building brands that actually matter. We challenge each other, and we can do the same for you. We believe that when you love what you do, every project is more than work, it&apos;s a chance to create something unforgettable. <strong>TOGETHER.</strong>
           </p>
         </div>
       </section>
