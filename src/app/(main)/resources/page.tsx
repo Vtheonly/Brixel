@@ -18,7 +18,7 @@ const ResourcesPage = () => {
           {/* Left Side: Image */}
           <div className="hidden lg:block lg:w-1/2">
             <Image
-              src="/images/resources.png"
+              src="/images/layers_/Clip path group.png"
               alt="Decorative graphic"
               width={500}
               height={500}
