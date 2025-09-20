@@ -46,7 +46,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-6">
+    <form onSubmit={handleSubmit} className="w-full space-y-6">
       <div>
         <label htmlFor="name" className="block text-sm font-medium mb-1">Name *</label>
         <Input id="name" type="text" required value={formData.name} onChange={handleChange} />

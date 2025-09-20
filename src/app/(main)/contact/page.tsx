@@ -1,27 +1,37 @@
-// src/app/(main)/contact/page.tsx
 import ContactForm from "@/components/sections/shared/ContactForm";
+import Image from "next/image";
 
 const ContactPage = () => {
   return (
-    <div className="container mx-auto px-4 py-16 md:py-24">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-16">
-        {/* Left Side: Text and Graphic */}
-        <div className="md:w-1/2">
-           <div className="relative w-64 h-64">
-             {/* This would be an SVG or an animated component */}
-             <div className="absolute inset-0 bg-brand-primary/20 rounded-full animate-pulse"></div>
-             <div className="absolute inset-4 bg-brand-primary/40 rounded-full animate-pulse delay-150"></div>
-             <div className="absolute inset-8 bg-brand-primary/60 rounded-full animate-pulse delay-300"></div>
-           </div>
-           <h1 className="text-5xl md:text-6xl font-bold mt-8 leading-tight">
-             Wanna <span className="highlight-pink">build</span> a brand !
-           </h1>
-           <p className="text-5xl md:text-6xl font-bold text-brand-secondary mt-2">Let&apos;s talk</p>
+    <div className="bg-gray-50 py-20 sm:py-28">
+      <div className="container mx-auto px-4">
+        <div className="w-full mx-auto text-left lg:text-left ml-0 lg:ml-8">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+            Wanna <span className="bg-pink-500 text-white px-2 py-1 rounded">build</span> a brand !
+          </h1>
+          <p className="text-5xl md:text-6xl font-bold text-orange-500 mt-2">
+            Let's talk
+          </p>
         </div>
 
-        {/* Right Side: Form */}
-        <div className="w-full md:w-1/2 flex justify-center">
-           <ContactForm />
+        <div className="mt-12 bg-white shadow-lg rounded-lg p-8 md:p-12 mx-auto w-full">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-8">
+            {/* Left Side: Image */}
+            <div className="w-full lg:w-2/5 flex justify-center lg:justify-start">
+              <Image
+                src="/images/layers_/Clip path group.png"
+                alt="Decorative graphic"
+                width={400}
+                height={400}
+                className="w-auto h-auto"
+              />
+            </div>
+
+            {/* Right Side: Form */}
+            <div className="w-full lg:w-4/5 flex justify-center lg:justify-end">
+              <ContactForm />
+            </div>
+          </div>
         </div>
       </div>
     </div>
