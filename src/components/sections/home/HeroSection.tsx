@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const images = [
   '/images/hero-background/hero-background_1.png.png',
@@ -34,9 +35,9 @@ const HeroSection: React.FC = () => {
       ))}
 
       {/* Preload images */}
-      <div style={{ display: 'none' }}>
+      <div className="hidden">
         {images.map((image) => (
-          <img key={`preload-${image}`} src={image} alt="Preload" />
+          <Image key={`preload-${image}`} src={image} alt="Preload" width={1} height={1} priority />
         ))}
       </div>
 

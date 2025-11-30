@@ -10,7 +10,7 @@ const ContactPage = () => {
             Wanna <span className="bg-pink-500 text-white px-2 py-1 rounded">build</span> a brand !
           </h1>
           <p className="text-5xl md:text-6xl font-bold text-orange-500 mt-2">
-            Let's talk
+            Let&apos;s talk
           </p>
         </div>
 
