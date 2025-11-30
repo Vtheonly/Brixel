@@ -1,9 +1,18 @@
-// src/app/layout.tsx
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const clash = localFont({
+  src: "../../public/fonts/ClashDisplay-Variable.ttf",
+  variable: "--font-clash",
+  display: "swap",
+});
+
+const montserrat = localFont({
+  src: "../../public/fonts/Montserrat-Variable.ttf",
+  variable: "--font-montserrat",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Brixel Agency | Building Brands That Matter",
@@ -18,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${clash.variable} ${montserrat.variable} font-sans`}>{children}</body>
     </html>
   );
 }

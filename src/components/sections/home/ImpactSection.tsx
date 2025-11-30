@@ -29,12 +29,12 @@ const ImpactSection = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl font-bold mb-12">Build an impact through brand design</h2>
+        <h2 className="text-4xl font-bold mb-12 font-display">Build an impact through brand design</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {impactItems.map((item, index) => (
             <div key={index} className="flex flex-col items-center p-6">
               <div className="mb-6">{item.icon}</div>
-              <h3 className="text-xl font-bold">{item.title}</h3>
+              <h3 className="text-xl font-bold font-display">{item.title}</h3>
               <p className="text-gray-600">{item.description}</p>
             </div>
           ))}

@@ -49,7 +49,7 @@ const HeroSection: React.FC = () => {
           <p className="text-sm md:text-base font-bold uppercase tracking-widest">
             WELCOME TO BRIXEL
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold mt-4 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mt-4 leading-tight font-display">
             We Help Founders & Businesses<br />
             Build Brands that Attract Clients, And Earn Trust.
           </h1>

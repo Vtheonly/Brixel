@@ -20,7 +20,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["var(--font-montserrat)", "sans-serif"],
+        display: ["var(--font-clash)", "sans-serif"],
       },
       animation: {
         'spin-slow': 'spin 15s linear infinite',
