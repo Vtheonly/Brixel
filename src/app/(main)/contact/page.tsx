@@ -5,7 +5,7 @@ const ContactPage = () => {
   return (
     <div className="bg-gray-50 py-20 sm:py-28">
       <div className="container mx-auto px-4">
-        <div className="w-full mx-auto text-left lg:text-left ml-0 lg:ml-8">
+        <div className="w-full mx-auto text-left lg:text-left lg:pl-8">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             Wanna <span className="bg-pink-500 text-white px-2 py-1 rounded">build</span> a brand !
           </h1>

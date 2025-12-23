@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = ({ className }: { className?: string }) => {
   return (
-    <footer className={`text-brand-light pt-12 ${className}`}>
+    <footer className={`text-brand-light pt-12 overflow-hidden ${className}`}>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Links */}

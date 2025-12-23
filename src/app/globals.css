@@ -6,6 +6,8 @@
 
 body {
   @apply bg-brand-light text-brand-dark;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 .highlight-pink {
