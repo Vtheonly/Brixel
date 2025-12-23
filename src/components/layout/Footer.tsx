@@ -47,9 +47,9 @@ const Footer = ({ className }: { className?: string }) => {
           </div>
         </div>
         
-        <div className="-mt-12 text-left">
-          <h1 className="text-[30vw] font-black text-white leading-none select-none">Brixel</h1>
-          <p className="text-6xl font-bold text-white -mt-[2.5vw]">Agency</p>
+        <div className="-mt-12 text-center relative z-0">
+          <h1 className="text-[18vw] font-black text-white leading-none select-none opacity-10 pointer-events-none">Brixel</h1>
+          <p className="text-6xl font-bold text-white -mt-[2vw] relative z-10">Agency</p>
         </div>
 
         <div className="border-t border-gray-700 pt-8 text-center mt-8">
