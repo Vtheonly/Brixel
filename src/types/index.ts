@@ -34,4 +34,5 @@ export interface Project {
   textColor: string; // To ensure text is visible on dark/light backgrounds
   challenge?: string;
   galleryImages: string[]; // Array of image paths for the case study body
+  videoUrl?: string; // Optional external video link
 }

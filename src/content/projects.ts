@@ -66,4 +66,28 @@ export const projectData: Project[] = [
       "/images/figma/lomina/b11eda197499971.663163d434ac7.jpg"
     ]
   },
+  {
+    id: "slim-soda",
+    title: "SLIM Soda 3D Campaign",
+    partnerType: "A beverage brand partner",
+    thumbnailUrl: "https://i.vimeocdn.com/video/2098251027-be1b67b1ca7003f323127ce354f3168def1f24bca695587493763c07669cc85f-d_640?region=us",
+    backgroundColor: "#062352",
+    textColor: "#ffffff",
+    heading: "Reimagining Refreshment: The SLIM Soda 3D Campaign",
+    description: "Hyper-realistic 3D visualization for Slim Soda, creating a visual language that communicates 'light' and 'crisp' through motion.",
+    galleryImages: [],
+    videoUrl: "https://vimeo.com/1148178386"
+  },
+  {
+    id: "protein-bar",
+    title: "Whey Protein Bar (3D Animation)",
+    partnerType: "A health & fitness brand partner",
+    thumbnailUrl: "https://i.vimeocdn.com/video/2098184009-cfdf13ba24cf153bb4c3ffcfa3c3c70cffa1842765af64c7c0191de7844ffb31-d_640?region=us",
+    backgroundColor: "#1a1a1a",
+    textColor: "#ffffff",
+    heading: "Fuel in Motion — Whey Protein Bar (3D Animation)",
+    description: "A motion-driven 3D product piece exploring power, nutrition, and movement through sharp transitions and bold lighting.",
+    galleryImages: [],
+    videoUrl: "https://vimeo.com/1148131356"
+  },
 ];

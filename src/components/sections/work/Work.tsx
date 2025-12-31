@@ -11,9 +11,18 @@ const Work = () => {
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projectData.map((project) => (
-            // Ensure this links to /work/[id]
-            <Link href={`/case-studies/${project.id}`} key={project.id} className="group block h-full">
+          {projectData.map((project) => {
+            const isExternal = !!project.videoUrl;
+            const href = project.videoUrl || `/case-studies/${project.id}`;
+
+            return (
+              <Link 
+                href={href} 
+                key={project.id} 
+                className="group block h-full"
+                target={isExternal ? "_blank" : undefined}
+                rel={isExternal ? "noopener noreferrer" : undefined}
+              >
               <div className="relative overflow-hidden rounded-lg shadow-lg h-full">
                 <div className="relative w-full aspect-[4/3]"> 
                   {/* Using aspect ratio to keep images uniform */}
@@ -32,8 +41,9 @@ const Work = () => {
                   <h2 className="text-3xl font-bold font-display">{project.title}</h2>
                 </div>
               </div>
-            </Link>
-          ))}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

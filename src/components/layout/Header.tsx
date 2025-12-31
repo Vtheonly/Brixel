@@ -3,13 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./Navbar";
 import { Button } from "@/components/ui/Button";
+import AnimatedLogo from "../common/AnimatedLogo";
 
 const Header = () => {
   return (
     <header className="py-6 bg-brand-light sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/images/layers_/image 7.png" alt="Brixel Agency Logo" width={100} height={40} className="w-24 md:w-32"/>
+          <AnimatedLogo variant="blue" className="w-24 md:w-32" />
         </Link>
         <div className="hidden md:block">
           <Navbar />

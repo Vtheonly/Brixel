@@ -1,11 +1,11 @@
 import { serviceData } from "@/content/services";
-import Image from "next/image";
+import AnimatedSVG from "../shared/AnimatedSVG";
 
 const illustrationMap: { [key: string]: string } = {
-  AnalysisIllustration: "/images/pink images/Layer_1.png",
-  StrategyIllustration: "/images/pink images/Layer_1_2.png",
-  DesignIllustration: "/images/pink images/Layer_1_3.png",
-  MarketingIllustration: "/images/pink images/Layer_1_4.png",
+  AnalysisIllustration: "/images/pink images/svg/Layer_1.svg",
+  StrategyIllustration: "/images/pink images/svg/Layer_2.svg",
+  DesignIllustration: "/images/pink images/svg/Layer_3.svg",
+  MarketingIllustration: "/images/pink images/svg/Layer_4.svg",
 };
 
 const Services = () => {
@@ -34,12 +34,9 @@ const Services = () => {
                   ))}
                 </div>
                 <div className="flex items-center justify-center">
-                  <Image
-                    src={illustrationMap[category.illustration]}
-                    alt={category.category}
-                    width={300}
-                    height={300}
-                    className="object-contain"
+                  <AnimatedSVG 
+                    url={illustrationMap[category.illustration]} 
+                    className="w-[300px] h-[300px]"
                   />
                 </div>
               </div>

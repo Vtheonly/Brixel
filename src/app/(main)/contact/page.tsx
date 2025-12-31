@@ -1,3 +1,4 @@
+import AnimatedFlower from "@/components/sections/shared/AnimatedFlower";
 import ContactForm from "@/components/sections/shared/ContactForm";
 import Image from "next/image";
 
@@ -16,15 +17,9 @@ const ContactPage = () => {
 
         <div className="mt-12 bg-white shadow-lg rounded-lg p-8 md:p-12 mx-auto w-full">
           <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-8">
-            {/* Left Side: Image */}
+            {/* Left Side: Animated Flower */}
             <div className="w-full lg:w-2/5 flex justify-center lg:justify-start">
-              <Image
-                src="/images/layers_/Clip path group.png"
-                alt="Decorative graphic"
-                width={400}
-                height={400}
-                className="w-auto h-auto"
-              />
+              <AnimatedFlower />
             </div>
 
             {/* Right Side: Form */}
