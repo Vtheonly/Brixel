@@ -1,8 +1,21 @@
+'use client';
+
 import { projectData } from "@/content/projects";
 import Image from "next/image";
 import Link from "next/link";
+import React, { useState } from "react";
+import VideoModal from "@/components/ui/VideoModal";
 
 const Work = () => {
+  const [selectedVideoUrl, setSelectedVideoUrl] = useState<string | null>(null);
+
+  const handleProjectClick = (e: React.MouseEvent, videoUrl?: string) => {
+    if (videoUrl) {
+      e.preventDefault();
+      setSelectedVideoUrl(videoUrl);
+    }
+  };
+
   return (
     <section className="py-20 px-4 md:px-8 lg:px-16">
       <div className="container mx-auto">
@@ -12,7 +25,7 @@ const Work = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projectData.map((project) => {
-            const isExternal = !!project.videoUrl;
+            const isVideo = !!project.videoUrl;
             const href = project.videoUrl || `/case-studies/${project.id}`;
 
             return (
@@ -20,8 +33,7 @@ const Work = () => {
                 href={href} 
                 key={project.id} 
                 className="group block h-full"
-                target={isExternal ? "_blank" : undefined}
-                rel={isExternal ? "noopener noreferrer" : undefined}
+                onClick={(e) => handleProjectClick(e, project.videoUrl)}
               >
               <div className="relative overflow-hidden rounded-lg shadow-lg h-full">
                 <div className="relative w-full aspect-[4/3]"> 
@@ -46,6 +58,12 @@ const Work = () => {
           })}
         </div>
       </div>
+
+      <VideoModal 
+        isOpen={!!selectedVideoUrl} 
+        onClose={() => setSelectedVideoUrl(null)} 
+        videoUrl={selectedVideoUrl || ''} 
+      />
     </section>
   );
 };

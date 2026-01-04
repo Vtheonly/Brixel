@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#F377DE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Strategy Illustration - Chess/planning with connected nodes -->
+  
+  <!-- Central brain/strategy node -->
+  <circle cx="200" cy="180" r="50" />
+  
+  <!-- Brain waves inside -->
+  <path d="M170 170 Q180 160 190 170 Q200 180 210 170 Q220 160 230 170" />
+  <path d="M175 190 Q185 180 195 190 Q205 200 215 190 Q225 180 225 190" />
+  
+  <!-- Connecting lines to outer nodes -->
+  <line x1="160" y1="150" x2="100" y2="100" />
+  <line x1="240" y1="150" x2="300" y2="100" />
+  <line x1="160" y1="210" x2="80" y2="280" />
+  <line x1="240" y1="210" x2="320" y2="280" />
+  <line x1="200" y1="230" x2="200" y2="320" />
+  
+  <!-- Strategy nodes -->
+  <circle cx="100" cy="100" r="25" />
+  <circle cx="300" cy="100" r="25" />
+  <circle cx="80" cy="280" r="25" />
+  <circle cx="320" cy="280" r="25" />
+  <circle cx="200" cy="340" r="25" />
+  
+  <!-- Icons inside nodes -->
+  <!-- Target icon -->
+  <circle cx="100" cy="100" r="12" />
+  <circle cx="100" cy="100" r="5" fill="#F377DE" />
+  
+  <!-- Lightbulb -->
+  <path d="M295 90 L295 105 M300 90 L300 110 M305 90 L305 105" />
+  <path d="M290 85 Q300 75 310 85" />
+  
+  <!-- Flag -->
+  <line x1="75" y1="268" x2="75" y2="292" />
+  <path d="M75 268 L95 275 L75 282" fill="#F377DE" />
+  
+  <!-- Gear -->
+  <circle cx="320" cy="280" r="12" />
+  <line x1="320" y1="265" x2="320" y2="270" />
+  <line x1="320" y1="290" x2="320" y2="295" />
+  <line x1="305" y1="280" x2="310" y2="280" />
+  <line x1="330" y1="280" x2="335" y2="280" />
+  
+  <!-- Checkmark -->
+  <polyline points="190,335 197,345 215,325" stroke-width="3" />
+  
+  <!-- Decorative arrows showing flow -->
+  <path d="M130 100 L160 130" />
+  <polyline points="155,125 160,130 155,135" />
+  
+  <path d="M270 100 L240 130" />
+  <polyline points="245,125 240,130 245,135" />
+</svg>

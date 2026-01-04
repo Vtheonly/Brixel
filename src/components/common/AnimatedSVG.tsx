@@ -1,8 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-
 interface AnimatedSVGProps {
   paths: string[];
   viewBox: string;
@@ -12,31 +9,8 @@ interface AnimatedSVGProps {
 }
 
 const AnimatedSVG = ({ paths, viewBox, width = 300, height = 300, className = "" }: AnimatedSVGProps) => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const pathVariants = {
-    hidden: { 
-      pathLength: 0, 
-      fillOpacity: 0,
-      strokeOpacity: 1
-    },
-    visible: { 
-      pathLength: 1, 
-      fillOpacity: 1,
-      strokeOpacity: 1,
-      transition: {
-        pathLength: { duration: 2, ease: "easeInOut" },
-        fillOpacity: { duration: 0.5, delay: 2, ease: "easeInOut" }
-      }
-    }
-  };
-
   return (
-    <div 
-      className={`relative cursor-pointer ${className}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <div className={`relative ${className}`}>
       <svg
         width={width}
         height={height}
@@ -47,7 +21,7 @@ const AnimatedSVG = ({ paths, viewBox, width = 300, height = 300, className = ""
       >
         <g>
           {paths.map((d, index) => (
-            <motion.path
+            <path
               key={index}
               d={d}
               fill="#F377DE"
@@ -55,9 +29,7 @@ const AnimatedSVG = ({ paths, viewBox, width = 300, height = 300, className = ""
               strokeWidth="1"
               strokeLinecap="round"
               strokeLinejoin="round"
-              variants={pathVariants}
-              initial="hidden"
-              animate={isHovered ? "visible" : "hidden"}
+              fillOpacity={1}
             />
           ))}
         </g>
@@ -67,3 +39,4 @@ const AnimatedSVG = ({ paths, viewBox, width = 300, height = 300, className = ""
 };
 
 export default AnimatedSVG;
+
