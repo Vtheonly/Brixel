@@ -13,8 +13,6 @@ export const FOOTER_LINKS = {
     { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
     { href: "/work", label: "Work" },
-    { href: "/case-studies", label: "Case Studies" },
-    { href: "/blogs", label: "Blogs" },
     { href: "/team", label: "Team" },
     { href: "/contact", label: "Contact Us" },
   ],

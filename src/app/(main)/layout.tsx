@@ -17,7 +17,7 @@ export default function MainLayout({
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">{children}</main>
-      <Footer className={isServicesPage ? 'bg-brand-primary' : 'bg-brand-dark'} />
+      <Footer className={isServicesPage ? 'bg-brand-magenta' : 'bg-brand-dark'} />
     </div>
   );
 }

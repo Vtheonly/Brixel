@@ -12,9 +12,9 @@ const Services = () => {
   return (
     <section className="py-20 px-4 md:px-8 lg:px-16 bg-[#F3F6FF]">
       <div className="container mx-auto">
-        <div className="flex justify-between items-start mb-16">
+        <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-6 md:gap-0">
           <h1 className="text-6xl font-bold">Services</h1>
-          <p className="text-lg max-w-md text-gray-600">
+          <p className="text-lg max-w-md text-gray-600 mt-4 md:mt-0">
             You feel like your brand is empty and doesn’t have a soul ! just a pretty facade with nothing to stand out ? don’t worry, because we got your back.
           </p>
         </div>

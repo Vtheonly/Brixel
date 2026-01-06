@@ -63,7 +63,11 @@ const ContactForm = () => {
         <label htmlFor="message" className="block text-sm font-medium mb-1">Your Message</label>
         <TextArea id="message" rows={5} value={formData.message} onChange={handleChange} />
       </div>
-      <Button type="submit" className="w-full" disabled={isSubmitting}>
+      <Button 
+        type="submit" 
+        className="w-full bg-[#ff5722] hover:bg-[#f4511e] text-white font-bold py-6 text-sm tracking-wide" 
+        disabled={isSubmitting}
+      >
         {isSubmitting ? 'SENDING...' : 'SEND'}
       </Button>
       {success && <p className="text-green-500">Your message has been sent successfully!</p>}
