@@ -10,7 +10,7 @@ const illustrationMap: { [key: string]: string } = {
 
 const Services = () => {
   return (
-    <section className="py-20 px-4 md:px-8 lg:px-16">
+    <section className="py-20 px-4 md:px-8 lg:px-16 bg-[#F3F6FF]">
       <div className="container mx-auto">
         <div className="flex justify-between items-start mb-16">
           <h1 className="text-6xl font-bold">Services</h1>

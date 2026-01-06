@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import PageLoader from "@/components/layout/PageLoader";
 
 const clash = localFont({
   src: "../../public/fonts/ClashDisplay-Variable.ttf",
@@ -27,7 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${clash.variable} ${montserrat.variable} font-sans`}>{children}</body>
+      <body className={`${clash.variable} ${montserrat.variable} font-sans`}>
+        <PageLoader />
+        {children}
+      </body>
     </html>
   );
 }

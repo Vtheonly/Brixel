@@ -11,6 +11,7 @@ const buttonVariants = cva(
       variant: {
         primary: "bg-brand-secondary text-white hover:bg-brand-secondary/90",
         secondary: "bg-brand-primary text-white hover:bg-brand-primary/90",
+        white: "bg-white text-brand-primary hover:bg-gray-100",
       },
       size: {
         default: "h-10 px-4 py-2",

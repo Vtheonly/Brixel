@@ -38,8 +38,8 @@ const Footer = ({ className }: { className?: string }) => {
   const logoVariant = isBlueLogo ? 'blue' : 'white';
 
   return (
-    <footer className={`w-full text-brand-light pt-12 overflow-hidden ${className}`}>
-      <div className="container mx-auto px-4 relative z-10">
+    <footer className={`w-full text-brand-light pt-12 overflow-hidden bg-[#062352] ${className}`}>
+      <div className="container mx-auto px-4 relative z-10 mb-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Links */}
           <div>
@@ -85,20 +85,20 @@ const Footer = ({ className }: { className?: string }) => {
             </div>
           </div>
         </div>
+      </div>
         
-        {/* LOGO SECTION - UPDATED FOR FULL WIDTH */}
-        <div className="mt-8 text-center relative z-0 flex flex-col items-center w-full">
-          <AnimatedLogo 
-            variant={logoVariant} 
-            className="w-full px-4 md:px-0" 
-          />
-        </div>
+      {/* LOGO SECTION - FULL WIDTH */}
+      <div className="w-full flex justify-center">
+        <AnimatedLogo 
+          variant={logoVariant} 
+          className="w-[90%] max-w-[1800px]" 
+        />
+      </div>
 
-        <div className="border-t border-gray-700 pt-8 text-center mt-8">
-            <p className="text-sm text-gray-400">
-              ©{new Date().getFullYear()} Brixel. All rights reserved.
-            </p>
-        </div>
+      <div className="border-t border-gray-700 pt-8 pb-8 text-center mt-8">
+          <p className="text-sm text-gray-400">
+            ©{new Date().getFullYear()} Brixel. All rights reserved.
+          </p>
       </div>
     </footer>
   );

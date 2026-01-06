@@ -5,7 +5,6 @@ export const NAV_LINKS: NavLink[] = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/work", label: "Work" },
-  { href: "/resources", label: "Resources" },
   { href: "/team", label: "Team" },
 ];
 
@@ -20,7 +19,7 @@ export const FOOTER_LINKS = {
     { href: "/contact", label: "Contact Us" },
   ],
   contact: {
-    phones: ["+213 540 16 48 47", "+213 795 48 10 55"],
+    phones: ["+213 795 48 10 55"],
     email: "contact@brixel.agency",
   },
   socials: [

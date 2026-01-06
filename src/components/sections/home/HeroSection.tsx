@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative text-white min-h-screen flex items-end px-4 sm:px-6 lg:px-8">
+    <section className="relative text-white min-h-screen flex items-center px-4 sm:px-6 lg:px-8">
       {/* Background Images */}
       {images.map((image, index) => (
         <div
@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent"></div>
 
       {/* Content */}
-      <div className="container mx-auto relative pb-20 md:pb-32">
+      <div className="container mx-auto relative">
         <div className="max-w-3xl">
           <p className="text-sm md:text-base font-bold uppercase tracking-widest">
             WELCOME TO BRIXEL
