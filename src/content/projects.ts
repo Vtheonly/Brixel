@@ -15,7 +15,8 @@ export const projectData: Project[] = [
       "/images/figma/artech space/3af39f172247369.647c4279c9069.jpg",
       "/images/figma/artech space/8d7116172247369.647c4279d00d7.jpg",
       "/images/figma/artech space/cea167172247369.647c4279d826c.jpg"
-    ]
+    ],
+    projectLink: "https://www.behance.net/gallery/172247369/artech-space-coworking-space-where-creatives-meet"
   },
   { 
     id: "amirane", 

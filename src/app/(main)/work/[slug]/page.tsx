@@ -81,9 +81,15 @@ export default function ProjectDetailsPage({ params }: { params: { slug: string 
             className="bg-brand-primary text-white hover:bg-brand-primary/90 px-8 py-6 text-lg rounded-full"
             asChild
           >
-            <Link href="/contact">
-              Start a project
-            </Link>
+            {project.projectLink ? (
+              <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
+                Watch Full Project
+              </a>
+            ) : (
+              <Link href="/contact">
+                Start a project
+              </Link>
+            )}
           </Button>
         </div>
 

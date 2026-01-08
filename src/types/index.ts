@@ -35,4 +35,5 @@ export interface Project {
   challenge?: string;
   galleryImages: string[]; // Array of image paths for the case study body
   videoUrl?: string; // Optional external video link
+  projectLink?: string; // Optional link to full project (e.g. Behance)
 }
