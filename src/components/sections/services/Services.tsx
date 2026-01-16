@@ -16,7 +16,7 @@ const Services = () => {
         <div className="flex flex-col md:flex-row justify-between items-start mb-10 md:mb-16 gap-4 md:gap-0">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">Services</h1>
           <p className="text-base sm:text-lg max-w-md text-gray-600 mt-2 md:mt-0">
-            You feel like your brand is empty and doesn't have a soul ! just a pretty facade with nothing to stand out ? don't worry, because we got your back.
+            You feel like your brand is empty and doesn&apos;t have a soul ! just a pretty facade with nothing to stand out ? don&apos;t worry, because we got your back.
           </p>
         </div>
         
