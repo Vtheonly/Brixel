@@ -33,8 +33,8 @@ const ImpactSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {impactItems.map((item, index) => (
             <div key={index} className={`flex flex-col items-center p-6 ${index < impactItems.length - 1 ? 'lg:border-r lg:border-gray-300' : ''}`}>
-              <p className="text-gray-600 mb-4 text-base">{item.title} {item.description}</p>
-              <div className="mt-auto h-40 w-40 flex items-center justify-center relative">{item.icon}</div>
+              <div className="h-40 w-40 flex items-center justify-center relative mb-6">{item.icon}</div>
+              <p className="text-gray-600 text-base max-w-xs">{item.title} {item.description}</p>
             </div>
           ))}
         </div>

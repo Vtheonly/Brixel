@@ -31,7 +31,8 @@ export const projectData: Project[] = [
       "/images/figma/amirane/Amirane Brand Guidelines-24.jpg",
       "/images/figma/amirane/Amirane Brand Guidelines-25.jpg",
       "/images/figma/amirane/Amirane Brand Guidelines-26.jpg"
-    ]
+    ],
+    projectLink: "https://www.behance.net/"
   },
   { 
     id: "isabelle-dupont", 

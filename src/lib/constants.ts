@@ -5,7 +5,6 @@ export const NAV_LINKS: NavLink[] = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/work", label: "Work" },
-  { href: "/team", label: "Team" },
 ];
 
 export const FOOTER_LINKS = {
@@ -13,7 +12,6 @@ export const FOOTER_LINKS = {
     { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
     { href: "/work", label: "Work" },
-    { href: "/team", label: "Team" },
     { href: "/contact", label: "Contact Us" },
   ],
   contact: {

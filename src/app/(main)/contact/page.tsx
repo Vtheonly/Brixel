@@ -12,7 +12,7 @@ const ContactPage = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0f172a] mb-2">
             Wanna <span className="relative inline-block mx-1 sm:mx-2">
               <span className="relative z-10">build a brand</span>
-              <span className="absolute inset-0 bg-pink-400 rotate-[-2deg] scale-110 -z-0"></span>
+              <span className="absolute inset-0 bg-[#F377DE] rotate-[-2deg] scale-110 -z-0"></span>
             </span> !
           </h1>
           <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#ff5722]">
@@ -25,9 +25,9 @@ const ContactPage = () => {
           
           {/* Left Column: Animated Graphic - Hidden on mobile, shown on tablet+ */}
           <div className="relative w-full lg:w-4/12 overflow-hidden bg-white hidden sm:flex items-center min-h-[200px] md:min-h-[300px] lg:min-h-auto">
-             <div className="absolute left-0 sm:-left-[30px] lg:-left-[50px] w-[280px] sm:w-[350px] lg:w-[400px] h-[280px] sm:h-[350px] lg:h-[400px] select-none pointer-events-none">
+             <div className="absolute -left-[200px] sm:-left-[250px] lg:-left-[300px] w-[400px] sm:w-[500px] lg:w-[600px] h-[400px] sm:h-[500px] lg:h-[600px] select-none pointer-events-none">
                  <Image 
-                    src="/images/layers_/Clip path group.png" 
+                    src="/images/layers_/flower.svg" 
                     alt="Decorative flower" 
                     fill
                     className="object-contain scale-110 lg:scale-125"

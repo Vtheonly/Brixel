@@ -86,9 +86,9 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             className="bg-brand-primary text-white hover:bg-brand-primary/90 px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg rounded-full"
             asChild
           >
-            <Link href="/contact">
-              Start a project
-            </Link>
+            <a href={project.projectLink || '#'} target="_blank" rel="noopener noreferrer">
+              Watch the full project
+            </a>
           </Button>
         </div>
 

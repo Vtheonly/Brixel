@@ -18,7 +18,7 @@ const montserrat = localFont({
 export const metadata: Metadata = {
   title: "Brixel Agency | Building Brands That Matter",
   description:
-    "A brand strategy & design agency for ambitious founders. We help you grow faster, launch smarter, and build brands people trust.",
+    "We Help Founders & Businesses Build Brands That Attract Clients, And Earn Trust.",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${clash.variable} ${montserrat.variable} font-sans`}>
+      <body className={`${clash.variable} ${montserrat.variable} font-sans font-semibold`}>
         <PageLoader />
         {children}
       </body>

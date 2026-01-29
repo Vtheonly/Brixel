@@ -14,7 +14,7 @@ export default function HomePage() {
       <section className="bg-brand-magenta text-white text-center py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold max-w-3xl mx-auto leading-snug font-display">
-            We&apos;re a brand strategy & design agency for ambitious founders. We help you grow faster, launch smarter, and build brands people trust.
+            We Help Founders & Businesses Build Brands That Attract Clients, And Earn Trust.
           </h2>
           <Link href="/work" className="mt-6 inline-block font-bold underline hover:no-underline transition-all">
             Check Our Work

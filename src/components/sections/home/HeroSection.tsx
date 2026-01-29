@@ -47,10 +47,10 @@ const HeroSection: React.FC = () => {
       {/* Content */}
       <div className="container mx-auto relative">
         <div className="max-w-3xl">
-          <p className="text-sm md:text-base font-bold uppercase tracking-widest">
+          <p className="text-sm md:text-base font-bold uppercase tracking-widest opacity-80">
             WELCOME TO BRIXEL
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold mt-4 leading-tight font-display">
+          <h1 className="text-4xl md:text-6xl font-bold mt-4 leading-tight font-display opacity-90">
             We Help Founders & Businesses<br />
             Build Brands that Attract Clients, And Earn Trust.
           </h1>

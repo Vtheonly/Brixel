@@ -56,7 +56,7 @@ const Footer = ({ className }: { className?: string }) => {
 
           {/* Contact */}
           <div>
-            <h3 className="font-bold mb-4 text-gray-400">Phone:</h3>
+            <h3 className="font-bold mb-4 text-white">Phone:</h3>
             {FOOTER_LINKS.contact.phones.map((phone) => (
               <a 
                 key={phone} 
@@ -126,7 +126,7 @@ const Footer = ({ className }: { className?: string }) => {
       </div>
 
       <div className="border-t border-gray-700 pt-8 pb-8 text-center mt-8">
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-white">
             ©{new Date().getFullYear()} Brixel. All rights reserved.
           </p>
       </div>

@@ -21,7 +21,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-montserrat)", "sans-serif"],
-        display: ["var(--font-clash)", "sans-serif"],
+        display: ["var(--font-montserrat)", "sans-serif"],
       },
       animation: {
         'spin-slow': 'spin 15s linear infinite',
