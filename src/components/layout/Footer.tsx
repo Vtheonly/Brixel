@@ -33,12 +33,56 @@ const SOCIAL_ICONS: Record<string, React.ReactNode> = {
 const Footer = ({ className }: { className?: string }) => {
   const pathname = usePathname();
   
-  // Only specific pages use blue logo, others use white
-  const isBlueLogo = pathname === '/fff';
-  const logoVariant = isBlueLogo ? 'blue' : 'white';
+  const getTheme = () => {
+    // Helper to check if it's a specific project page (supports both /work and /case-studies)
+    const isProject = (slug: string) => pathname === `/work/${slug}` || pathname === `/case-studies/${slug}`;
+
+    // Theme 1: Home and Archtech
+    if (pathname === '/' || isProject('artech')) {
+      return { 
+        bg: 'bg-[#062352]', 
+        text: 'text-white', 
+        logoVariant: 'white' as const,
+        border: 'border-white/10'
+      };
+    }
+    
+    // Theme 2: Services, Lomina AI, Taghrifth
+    if (pathname === '/services' || isProject('lomina') || isProject('taghrifth')) {
+      return { 
+        bg: 'bg-[#901352]', 
+        text: 'text-white', 
+        logoVariant: 'white' as const,
+        border: 'border-white/10'
+      };
+    }
+
+    // Theme 3: Contact and rest of works pages
+    const isInWorkSection = pathname === '/work' || pathname === '/case-studies' || 
+                           pathname.startsWith('/work/') || pathname.startsWith('/case-studies/');
+                           
+    if (pathname === '/contact' || isInWorkSection) {
+      return { 
+        bg: 'bg-[#F3F6FF]', 
+        text: 'text-[#062352]', 
+        logoVariant: 'blue' as const,
+        border: 'border-[#062352]/10'
+      };
+    }
+
+    // Default fallback (Theme 1)
+    return { 
+      bg: 'bg-[#062352]', 
+      text: 'text-white', 
+      logoVariant: 'white' as const,
+      border: 'border-white/10'
+    };
+  };
+
+  const theme = getTheme();
 
   return (
-    <footer className={`w-full text-brand-light pt-12 overflow-hidden bg-[#062352] ${className}`}>
+    <footer className={`w-full pt-12 overflow-hidden ${theme.bg} ${theme.text} ${className || ''}`}>
       <div className="container mx-auto px-4 relative z-10 mb-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Links */}
@@ -56,7 +100,7 @@ const Footer = ({ className }: { className?: string }) => {
 
           {/* Contact */}
           <div>
-            <h3 className="font-bold mb-4 text-white">Phone:</h3>
+            <h3 className={`font-bold mb-4 ${theme.text}`}>Phone:</h3>
             {FOOTER_LINKS.contact.phones.map((phone) => (
               <a 
                 key={phone} 
@@ -104,7 +148,7 @@ const Footer = ({ className }: { className?: string }) => {
                  <a 
                    href={social.href} 
                    key={social.name} 
-                   className="hover:opacity-75 text-white hover:text-brand-primary transition-colors" 
+                   className={`hover:opacity-75 ${theme.text} hover:text-brand-primary transition-colors`}
                    target="_blank" 
                    rel="noopener noreferrer"
                  >
@@ -120,13 +164,13 @@ const Footer = ({ className }: { className?: string }) => {
       {/* LOGO SECTION - FULL WIDTH */}
       <div className="w-full flex justify-center">
         <AnimatedLogo 
-          variant={logoVariant} 
+          variant={theme.logoVariant} 
           className="w-[90%] max-w-[1800px]" 
         />
       </div>
 
-      <div className="border-t border-gray-700 pt-8 pb-8 text-center mt-8">
-          <p className="text-sm text-white">
+      <div className={`border-t ${theme.border} pt-8 pb-8 text-center mt-8`}>
+          <p className={`text-sm ${theme.text}`}>
             ©{new Date().getFullYear()} Brixel. All rights reserved.
           </p>
       </div>
