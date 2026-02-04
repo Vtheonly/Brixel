@@ -32,7 +32,7 @@ export const projectData: Project[] = [
       "/images/figma/amirane/Amirane Brand Guidelines-25.jpg",
       "/images/figma/amirane/Amirane Brand Guidelines-26.jpg"
     ],
-    projectLink: "https://www.behance.net/"
+    projectLink: "https://www.behance.net/gallery/223321777/Amirane-A-New-Era-in-Transportation"
   },
   { 
     id: "isabelle-dupont", 
@@ -51,13 +51,14 @@ export const projectData: Project[] = [
       "/images/figma/isabelle/isabelle dupont brand id [Recovered]-33.jpg",
       "/images/figma/isabelle/isabelle dupont brand id [Recovered]-35.jpg",
       "/images/figma/isabelle/isabelle dupont brand id [Recovered]-36.jpg"
-    ]
+    ],
+    projectLink: "https://www.behance.net/gallery/238449301/Isabelle-Dupont-Luxury-Sci-Beauty-Brand-Identity"
   },
   { 
     id: "lomina", 
     title: "Lomina", 
     partnerType: "A print on demand brand", 
-    thumbnailUrl: "/images/figma/lomina/new_27d01f197499971.663163d433d4d-(Compressify.io).jpg",
+    thumbnailUrl: "/images/figma/lomina/27d01f197499971.663163d433d4d.jpg",
     backgroundColor: "#F3F6FF", 
     textColor: "#020B26",
     heading: "Lomina.Ai, Let's create something unforgettable!",
@@ -66,7 +67,8 @@ export const projectData: Project[] = [
       "/images/figma/lomina/new_2d27cb197499971.663163d42962e-(Compressify.io).jpg",
       "/images/figma/lomina/new_4dbfe5197499971.663163d43360b 2-(Compressify.io).jpg",
       "/images/figma/lomina/new_b11eda197499971.663163d434ac7-(Compressify.io).jpg"
-    ]
+    ],
+    projectLink: "https://www.behance.net/gallery/197499971/LominaAI-merch-branding-guidelines"
   },
   {
     id: "slim-soda",
@@ -104,6 +106,7 @@ export const projectData: Project[] = [
     galleryImages: [
       "/images/figma/taghrifth/taghfith Brand Guidelines-13.jpg",
       "/images/figma/taghrifth/taghfith Brand Guidelines-18.jpg"
-    ]
+    ],
+    projectLink: "https://www.behance.net/gallery/238650945/Taghrifth-Modern-Heritage-Caf-Brand-Identity"
   },
 ];
