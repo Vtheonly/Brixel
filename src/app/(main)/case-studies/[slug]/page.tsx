@@ -56,9 +56,9 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
           </div>
         )}
 
-        {/* Dynamic Image Gallery - Responsive Grid */}
+        {/* Dynamic Image Gallery - Vertical Stack */}
         {project.galleryImages && project.galleryImages.length > 0 ? (
-          <div className="grid grid-cols-2 sm:grid-cols-1 gap-3 sm:gap-6 md:gap-12">
+          <div className="flex flex-col gap-6 sm:gap-12 md:gap-24">
             {project.galleryImages.map((imgSrc, index) => (
               <div 
                 key={index} 

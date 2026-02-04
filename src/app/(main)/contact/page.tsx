@@ -21,23 +21,21 @@ const ContactPage = () => {
         </div>
 
         {/* Main Card */}
-        <div className="bg-white rounded-[1.5rem] sm:rounded-[2rem] shadow-xl overflow-hidden flex flex-col lg:flex-row lg:min-h-[600px]">
+        <div className="bg-white rounded-[1.5rem] sm:rounded-[2rem] shadow-xl overflow-hidden relative flex flex-col lg:flex-row lg:min-h-[600px]">
           
-          {/* Left Column: Animated Graphic - Hidden on mobile, shown on tablet+ */}
-          <div className="relative w-full lg:w-4/12 overflow-hidden bg-white hidden sm:flex items-center min-h-[200px] md:min-h-[300px] lg:min-h-auto">
-             <div className="absolute -left-[200px] sm:-left-[250px] lg:-left-[300px] w-[400px] sm:w-[500px] lg:w-[600px] h-[400px] sm:h-[500px] lg:h-[600px] select-none pointer-events-none">
-                 <Image 
-                    src="/images/layers_/flower.svg" 
-                    alt="Decorative flower" 
-                    fill
-                    className="object-contain scale-110 lg:scale-125"
-                 />
-             </div>
+          {/* Decorative Graphic - Absolute positioned to not push the form */}
+          <div className="absolute -left-[180px] sm:-left-[220px] lg:-left-[280px] top-1/2 -translate-y-1/2 w-[360px] sm:w-[440px] lg:w-[560px] h-[360px] sm:h-[440px] lg:h-[560px] select-none pointer-events-none z-0 opacity-50 sm:opacity-100">
+              <Image 
+                src="/images/layers_/flower.svg" 
+                alt="Decorative flower" 
+                fill
+                className="object-contain"
+              />
           </div>
 
-          {/* Right Column: Form */}
-          <div className="w-full lg:w-8/12 p-6 sm:p-8 md:p-12 lg:p-16 flex items-center">
-             <div className="w-full">
+          {/* Form Container: Now centered across the available space */}
+          <div className="w-full p-6 sm:p-8 md:p-12 lg:p-16 flex items-center justify-center relative z-10">
+             <div className="w-full max-w-2xl">
                 <ContactForm />
              </div>
           </div>

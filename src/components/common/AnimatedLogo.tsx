@@ -8,7 +8,7 @@ interface AnimatedLogoProps {
 }
 
 const AnimatedLogo = ({ variant, className }: AnimatedLogoProps) => {
-  const logoSrc = variant === 'blue' ? '/images/brixel/blue.png' : '/images/brixel/white.png';
+  const logoSrc = variant === 'blue' ? '/images/brixel/blue.svg' : '/images/brixel/white.svg';
 
   return (
     <div className={`relative ${className}`}>

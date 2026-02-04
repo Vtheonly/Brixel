@@ -57,15 +57,15 @@ export const projectData: Project[] = [
     id: "lomina", 
     title: "Lomina", 
     partnerType: "A print on demand brand", 
-    thumbnailUrl: "/images/figma/lomina/27d01f197499971.663163d433d4d.jpg",
+    thumbnailUrl: "/images/figma/lomina/new_27d01f197499971.663163d433d4d-(Compressify.io).jpg",
     backgroundColor: "#F3F6FF", 
     textColor: "#020B26",
     heading: "Lomina.Ai, Let's create something unforgettable!",
     description: "A vibrant identity for a print-on-demand AI driven brand.",
     galleryImages: [
-      "/images/figma/lomina/2d27cb197499971.663163d42962e.jpg",
-      "/images/figma/lomina/9be0a9197499971.663163d431496.jpg",
-      "/images/figma/lomina/b11eda197499971.663163d434ac7.jpg"
+      "/images/figma/lomina/new_2d27cb197499971.663163d42962e-(Compressify.io).jpg",
+      "/images/figma/lomina/new_4dbfe5197499971.663163d43360b 2-(Compressify.io).jpg",
+      "/images/figma/lomina/new_b11eda197499971.663163d434ac7-(Compressify.io).jpg"
     ]
   },
   {
@@ -91,5 +91,19 @@ export const projectData: Project[] = [
     description: "A motion-driven 3D product piece exploring power, nutrition, and movement through sharp transitions and bold lighting.",
     galleryImages: [],
     videoUrl: "https://vimeo.com/1148131356"
+  },
+  { 
+    id: "taghrifth", 
+    title: "Taghrifth", 
+    partnerType: "An Algerian heritage café concept", 
+    thumbnailUrl: "/images/figma/taghrifth/taghfith Brand Guidelines-22.jpg",
+    backgroundColor: "#F3F6FF", 
+    textColor: "#020B26",
+    heading: "Taghrifth — A modern bridge to Algerian cultural legacy",
+    description: "Taghrifth (which translates roughly to 'Baghrir' in Algerian Kabyl language) is a new Algerian-heritage café concept. They specialize in modernized, high quality traditional dishes (like M'semen, Beghrir, or specific local pastries/crepes) and premium coffee, aiming to bridge cultural legacy with contemporary urban life.",
+    galleryImages: [
+      "/images/figma/taghrifth/taghfith Brand Guidelines-13.jpg",
+      "/images/figma/taghrifth/taghfith Brand Guidelines-18.jpg"
+    ]
   },
 ];

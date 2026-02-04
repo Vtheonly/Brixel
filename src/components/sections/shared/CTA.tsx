@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/Button";
+import Link from "next/link";
 
 const CTA = () => {
   return (
@@ -7,7 +8,9 @@ const CTA = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
           wanna collaborate and work with us<br className="hidden md:inline" /> on your brand together!
         </h2>
-        <Button variant="primary" className="bg-[#F84F0E] hover:bg-[#F84F0E]/90">Start a brand</Button>
+        <Link href="/contact">
+          <Button variant="primary" className="bg-[#F84F0E] hover:bg-[#F84F0E]/90">Start a brand</Button>
+        </Link>
       </div>
     </section>
   );
